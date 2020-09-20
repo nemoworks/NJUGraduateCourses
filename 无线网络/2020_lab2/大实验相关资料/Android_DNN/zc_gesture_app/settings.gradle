@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name='zc_gesture_app'

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/btnplayrecord"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnstoprecord"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="1dp"
+        android:text="播放"
+        android:textColor="#ffffff"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/btnstoprecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="50dp"
+        android:text="停止"
+        android:textColor="#ffffff"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnplayrecord"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:text="当前状态："
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/state_text"
+        android:layout_width="297dp"
+        android:layout_height="65dp"
+        android:layout_below="@+id/title_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@android:color/holo_blue_bright"
+        android:gravity="center"
+        android:text="未启动"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/count_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/state_text"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="70dp"
+        android:text="手势总识别次数：0 次"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/up_text"
+        android:layout_width="108dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/count_text"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:text="向上翻页：" />
+
+    <TextView
+        android:id="@+id/click_text"
+        android:layout_width="106dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/up_text"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:text="双击：" />
+
+    <TextView
+        android:id="@+id/down_text"
+        android:layout_width="128dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/count_text"
+        android:layout_marginStart="200dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        android:text="向下翻页：" />
+
+    <TextView
+        android:id="@+id/grab_text"
+        android:layout_width="128dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/down_text"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="40dp"
+        android:text="截屏：" />
+
+
+</RelativeLayout>
+
+
